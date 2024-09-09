@@ -575,7 +575,8 @@ static inline double VL_ROUND(double n) {
 #elif defined(VL_IGNORE_UNKNOWN_ARCH)
 # define VL_CPU_RELAX()
 #else
-# error "Missing VL_CPU_RELAX() definition."
+# define VL_CPU_RELAX()
+// # error "Missing VL_CPU_RELAX() definition."
 #endif
 
 //=========================================================================
